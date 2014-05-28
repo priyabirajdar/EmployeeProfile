@@ -1,0 +1,19 @@
+<!--Edit Employee Template-->
+
+<script type="text/template" id="edit-employee-template">
+    <form class="edit-employee-form">
+        <legend><%= employee ? 'Edit' : 'New' %> Employee</legend>
+        <label>First Name</label>
+        <input name="firstname" type="text" value="<%= employee ? employee.get('firstname') : '' %>">
+        <label>Employee ID</label>
+        <input name="lastname" type="text" value="<%= employee ? employee.get('lastname') : '' %>">
+        <label>Age</label>
+        <input name="age" type="text" value="<%= employee ? employee.get('age') : '' %>">
+        <hr />
+        <button type="submit" class="btn"><%= employee ? 'Update' : 'Create' %></button>
+        <button type="button" class="btn btn-danger cancel">Cancel</button>
+        <% if(employee) { %>
+        <input type="hidden" name="id" value="<%= employee.id %>" />
+        <% }; %>
+    </form>
+</script>

@@ -1,0 +1,29 @@
+  <!--Employee List Template-->
+<script type="text/template" id="employee-list-template">
+    <table align="right" class="table striped">
+        <thead>
+        <tr>
+            <th/><th/><th></th>
+            <th>
+                <a href="#/add" class="btn btn-primary">Add</a>
+            </th>
+        </tr>
+        <tr>
+            <th>Full Name</th><th>Employee ID</th><th>Age</th><th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% _.each(employees, function(user) { %>
+        <tr>
+            <td><%= htmlEncode(user.get('firstname')) %></td>
+            <td><%= htmlEncode(user.get('lastname')) %></td>
+            <td><%= htmlEncode(user.get('age')) %></td>
+            <td>
+                <a class="btn" href="#/edit/<%= user.id %>">Edit</a>
+                <a class="btn btn-danger delete" href="#/delete/<%= user.id %>">Delete</a>
+            </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</script>

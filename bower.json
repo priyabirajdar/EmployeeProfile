@@ -1,0 +1,10 @@
+{
+    "name": "employeeProfileBower",
+    "version": "1.0.0",
+    "dependencies": {
+        "jquery": "latest",
+        "backbone": "latest",
+        "bootstrap":"latest",
+        "aura" : "latest"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "EmployeeProfile",
+    "version": "0.0.1",
+    "description": "An Application to start with Backbone, Aura, require and bower concepts",
+    "author": "priya.birajdar@synerzip.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/..."
+    },
+    "main": "app/app.js"
+
+}
